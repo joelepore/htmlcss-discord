@@ -19,3 +19,6 @@ Partite comunque sempre semplici, non focalizzandovi su parti/soluzioni compless
 Aggiungere le “onde” alle sections
 
 Buon lavoro!
+
+## Svolgimento
+Partendo dalla struttura a blocchi creata nell'esercizio precedente, procedo col completare la pagina inserendo immagini e testi relativi, riutilizzando il piu' possibile le classi gia' create.
