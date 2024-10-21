@@ -13,6 +13,10 @@ body {
   font-family: 'Helvetica';
 }
 
+ul {
+  list-style: none;
+}
+
 /* DEBUG 
 (stili che verranno cancellati nel layout finale*/
 /* .debug {
@@ -98,15 +102,47 @@ main section:last-child .section-discord {
   min-height: 40px;
 }
 
+.button {
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.button-white {
+  background-color: #fbfffa;
+  color: black;
+}
+
+.button:hover {
+  filter: brightness(90%);
+  transition-property: filter;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
 /* SPECIFIC */
 header {
   background-color: #3160e0;
   padding: 1rem 0;
+  font-size: .9rem;
+}
+
+header img {
+  max-width: 100px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+header .button {
+  font-size: .8rem;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 section.hero>div {
