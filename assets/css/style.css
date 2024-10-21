@@ -27,7 +27,9 @@ ul {
 /* .debug {
   min-height: 40px;
   border: 2px dashed black;
-}
+} */
+
+/*
 
 header nav,
 header img,
@@ -94,7 +96,7 @@ main section:last-child .section-discord {
 
 /* UTILS */
 .container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -111,6 +113,7 @@ main section:last-child .section-discord {
   padding: 10px 15px;
   border-radius: 30px;
   font-size: 1rem;
+  display: inline-block;
 }
 
 .button-light {
@@ -121,6 +124,10 @@ main section:last-child .section-discord {
 .button-dark {
   background-color: #232729;
   color: white;
+}
+
+.button-accent {
+  background-color: #8ca1e1;
 }
 
 .button:hover {
@@ -182,26 +189,44 @@ section.hero>div p {
 .section-discord {
   display: flex;
   padding: 5rem 0;
+  align-items: center;
 }
 
 .section-discord-image {
-  flex-grow: 2;
+  flex-grow: 4;
 }
 
 .section-discord-content {
   flex-grow: 1.5;
+  padding: 0 5rem;
+}
+
+.section-discord-content h2 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 section:nth-child(odd) {
-  background-color: lightgray;
+  background-color: white;
 }
 
 section:nth-child(even) {
-  background-color: gray;
+  background-color: #f6f6f6;
 }
 
-main section:last-child .section-discord-content {
+main section:last-child {
+  text-align: center;
+}
+
+main section:last-child h3 {
+  padding: 2rem 0;
+}
+
+main section:last-child .section-discord-content:last-child {
   flex-grow: 1;
+  background-image: url("/assets/img/stars.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer {
