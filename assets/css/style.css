@@ -96,7 +96,7 @@ main section:last-child .section-discord {
 
 /* UTILS */
 .container {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -193,12 +193,23 @@ section.hero>div p {
 }
 
 .section-discord-image {
+  text-align: center;
   flex-grow: 4;
+  flex-shrink: 1;
 }
 
 .section-discord-content {
-  flex-grow: 1.5;
   padding: 0 5rem;
+  flex-grow: 1;
+  flex-shrink: 4;
+}
+
+section img {
+  width: 100%;
+}
+
+section:last-child .section-discord .section-discord-image img {
+  width: 100%;
 }
 
 .section-discord-content h2 {
@@ -222,8 +233,12 @@ main section:last-child h3 {
   padding: 2rem 0;
 }
 
+main section:last-child .section-discord-content,
+main section:last-child .section-discord-image {
+  flex-grow: 0;
+}
+
 main section:last-child .section-discord-content:last-child {
-  flex-grow: 1;
   background-image: url("/assets/img/stars.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -232,22 +247,68 @@ main section:last-child .section-discord-content:last-child {
 footer {
   background-color: #23272a;
   padding: 5rem 0;
+  color: white;
+}
+
+footer h3,
+footer h4 {
+  color: #8ca1e1;
 }
 
 .footer-top {
   display: flex;
+  border-bottom: 1px solid #3b4149;
+  padding-bottom: 3rem;
 }
 
 .footer-top-heading {
   flex-grow: 1;
 }
 
+.footer-top-heading ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+footer .lang {
+  margin: 1rem 0;
+}
+
+footer .lang {
+  font-size: .9rem;
+}
+
+.footer-top-heading span::before {
+  background-image: url("/assets/img/ita.png");
+  background-size: 1.2rem 0.9rem;
+  width: 1.2rem;
+  height: 0.9rem;
+  content: " ";
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .footer-top-menu {
   flex-grow: 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top-menu li {
+  line-height: 2.2rem;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  align-items: center;
+}
+
+.footer-bottom img {
+  max-width: 100px;
+}
+
+.footer-bottom .button {
+  font-size: 0.9rem;
 }
