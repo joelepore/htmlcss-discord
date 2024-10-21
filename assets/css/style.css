@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 
 body {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica', sans-serif;
 }
 
 ul {
@@ -105,17 +110,23 @@ main section:last-child .section-discord {
 .button {
   padding: 10px 15px;
   border-radius: 30px;
+  font-size: 1rem;
 }
 
-.button-white {
+.button-light {
   background-color: #fbfffa;
   color: black;
 }
 
+.button-dark {
+  background-color: #232729;
+  color: white;
+}
+
 .button:hover {
-  filter: brightness(90%);
+  filter: brightness(70%);
   transition-property: filter;
-  transition-duration: 200ms;
+  transition-duration: 100ms;
   transition-timing-function: ease-in-out;
 }
 
@@ -147,7 +158,25 @@ header .container {
 
 section.hero>div {
   width: 55%;
-  margin: 5rem auto;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+section.hero>div p {
+  margin: 2rem 0;
+}
+
+#hero {
+  background-image: url("/assets/img/jumbo.png");
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  padding: 10rem 0;
+  background-size: cover;
+}
+
+#hero .button-light {
+  margin-right: 2rem;
 }
 
 .section-discord {
