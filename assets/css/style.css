@@ -1,5 +1,6 @@
 :root {
   --discord-blue: #3160e0;
+  --bg-light: #f6f6f6;
 }
 
 * {
@@ -118,6 +119,17 @@ section.hero>div p {
   margin-right: 2rem;
 }
 
+.wave {
+  height: 100px;
+  background-image: url("../img/wave.svg");
+  background-size: cover;
+  opacity: 0.04;
+}
+
+.wave.upside {
+  rotate: 180deg;
+}
+
 .section-discord {
   display: flex;
   padding: 5rem 0;
@@ -149,12 +161,8 @@ section:last-child .section-discord .section-discord-image img {
   padding-bottom: 2rem;
 }
 
-section:nth-child(odd) {
-  background-color: white;
-}
-
-section:nth-child(even) {
-  background-color: #f6f6f6;
+section.bg-light {
+  background-color: var(--bg-light);
 }
 
 main section:last-child {
