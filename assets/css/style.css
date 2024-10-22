@@ -1,3 +1,7 @@
+:root {
+  --discord-blue: #3160e0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +71,7 @@ ul {
 
 /* SPECIFIC */
 header {
-  background-color: #3160e0;
+  background-color: var(--discord-blue);
   padding: 1rem 0;
   font-size: .9rem;
 }
@@ -102,7 +106,7 @@ section.hero>div p {
 }
 
 #hero {
-  background-image: url("/assets/img/jumbo.png");
+  background-image: url("../img/jumbo.png");
   text-align: center;
   font-size: 1.2rem;
   color: white;
@@ -167,7 +171,7 @@ main section:last-child .section-discord-image {
 }
 
 main section:last-child .section-discord-content:last-child {
-  background-image: url("/assets/img/stars.svg");
+  background-image: url("../img/stars.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -207,7 +211,7 @@ footer .lang {
 }
 
 .footer-top-heading span::before {
-  background-image: url("/assets/img/ita.png");
+  background-image: url("../img/ita.png");
   background-size: 1.2rem 0.9rem;
   width: 1.2rem;
   height: 0.9rem;
